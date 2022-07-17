@@ -1,0 +1,179 @@
+.time-picker{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	transform: translate(-50%, -50%);
+}
+.time-picker-drop.time-picker-open{
+	display: block;
+}
+.time-picker-drop{
+	width: 236px;
+	display: none;
+	position: absolute;
+	text-align: center;
+	
+	padding: 20px 36px;
+	background-color: #fff;
+	box-sizing: border-box;
+	
+	-webkit-box-shadow: 0px 0px 10px 2px #949494 ; 
+			box-shadow: 0px 0px 10px 2px #949494 ;	
+}
+.time-digit-zero{
+	opacity: 0.5;
+}
+.time-colon,
+.time-hrs-digit-one,
+.time-hrs-digit-two,
+.time-mins-digit-one,
+.time-mins-digit-two{
+	font-size: 28px;
+	font-family: Arial;
+	margin: 10px 0;
+}
+.time-colon,
+.time-hrs, 
+.time-mins,
+.time-hrs-digit-one,
+.time-hrs-digit-two,
+.time-mins-digit-one,
+.time-mins-digit-two{
+	display: inline-block;
+	vertical-align: middle;
+}
+.time-notation-ampm,
+.time-notation-24hrs{
+	display: none;
+	vertical-align: middle;
+}
+.time-hrs-box{
+	display: block;
+	position: relative;
+}
+.time-notation-ampm,
+.time-hrs-up,
+.time-hrs-down,
+.time-mins-up,
+.time-mins-down,
+.time-control-ok,
+.time-control-cancel{
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+			border-radius: 4px;
+			
+	cursor: pointer;
+}
+.time-hrs-up,
+.time-hrs-down,
+.time-mins-up,
+.time-mins-down,
+.time-notation-ampm,
+.time-notation-select-ampm,
+.time-notation-select-24hrs,
+.time-control-ok,
+.time-control-cancel{
+	border: none;
+	background: transparent;	
+}
+.time-hrs-up,
+.time-hrs-down,
+.time-mins-up,
+.time-mins-down{
+	display: block;
+	padding: 0 8px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: serif;
+	
+	transform-origin: center center;
+	transform: scale(2.6, 1) rotate(90deg);
+	
+	opacity: 0.6;
+}
+.time-hrs-up:hover,
+.time-hrs-down:hover,
+.time-mins-up:hover,
+.time-mins-down:hover{
+	background-color: #f0f0f0;
+	opacity: 0.8;
+}
+.time-notation-active{
+	display: inline-block;
+}
+.time-notation-24hrs,
+.time-notation-ampm{
+	position: relative;
+	font-family: Arial;
+	margin: 0 0;
+	overflow: hidden;
+}
+.time-notation-ampm{
+	width: 36px;
+	height: 28px;
+	padding: 6px 8px;
+}
+.time-notation-24hrs{
+	width: 36px;
+	font-size: 14px;
+	padding: 0 0;
+}
+.time-notation-ampm:hover{
+	background-color: #f0f0f0;
+}
+.time-notation-select{
+	margin: 20px auto;
+}
+.time-notation-select-ampm,
+.time-notation-select-24hrs{
+	padding: 10px 16px;
+	background-color: #0000ff33;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.time-notation-select-ampm{
+	border-radius: 999px 0 0 999px;
+	margin-right: -0px;
+}
+.time-notation-select-24hrs{
+	border-radius: 0 999px 999px 0;
+	margin-left: -0px;
+}
+.time-notation-select-ampm.time-notation-select-active,
+.time-notation-select-24hrs.time-notation-select-active,
+.time-notation-select-ampm:hover,
+.time-notation-select-24hrs:hover{
+	background-color: #0000ff55;
+}
+.time-notation-am,
+.time-notation-pm{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 125%;
+	
+	-webkit-transition: transform 250ms ease-in-out;
+	   -moz-transition: transform 250ms ease-in-out;
+			transition: transform 250ms ease-in-out;
+		
+	overflow: hidden;
+}
+.time-notation-am.time-notation-ampm-active,
+.time-notation-pm.time-notation-ampm-active{
+	transform: translateY(-100%);
+}
+.time-controls{
+	text-align: right;
+}
+.time-control-ok,
+.time-control-cancel{
+	color: #0000ff;
+	padding: 6px 8px;
+}
+.time-control-ok:hover,
+.time-control-cancel:hover{
+	background-color: #f0f0f0;
+}
