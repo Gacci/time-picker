@@ -1,7 +1,8 @@
 # time-picker
 Time picker module
 
-## How to use it?
+
+## Basic usage
 
 ```
 <input type="text" class="time-picker">
@@ -9,6 +10,8 @@ Time picker module
 
 <link type="text/css" rel="stylesheet" href="css/time-picker.css">
 <script type="text/javascript" src="js/time-picker.js"></script>
+
+
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function(e) {
 	let time = new TimePicker(document.querySelector('.time-picker'), {
@@ -39,3 +42,21 @@ document.addEventListener('DOMContentLoaded', function(e) {
 </script>
 ```
 
+
+### onBeforeOpen
+event emited before time picker opens (is visible)
+
+### onAfterOpen
+event emitted after time picker has opened (is hidden)
+
+### onBeforeClose
+event emitted before time picker is closed
+
+### onAfterClose
+event emitted after time picker has closed
+
+### onValueConfirmed
+event emitted when user clicks OK button
+
+### onValueChanged
+event emitted when value (time) selected has changed from previous
