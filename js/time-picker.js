@@ -403,6 +403,7 @@
 			}
 		});
 		*/
+		self.input.readOnly = true;
 		self.input.addEventListener('focus', function(e) {
 			setDropViewVisible.call(self);
 		});
