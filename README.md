@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
 ```
 
 
+![time-picker screenshot](https://github.com/Gacci/time-picker/blob/master/screenshots/Screenshot%202022-07-19%20131412.png)
+
+
 ### onBeforeOpen
 event emited before time picker opens (is visible)
 
